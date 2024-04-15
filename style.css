@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.cabecalho__links{
+    display: flex;
+    gap:1rem;
+}
+
+.into{
+    margin: 2rem;
+    display: flex;
+}
+
+.into__texto{
+    margin: 2.5rem 1rem 2.5rem 1rem;
+}
+.into__button{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+    gap: 3px;
+}
+.sobre__mim{
+    background-color: aquamarine;
+    width: 100%;
+}
+.sobre__mim__texto{
+    padding: 1rem;
+}
+
+
+
+
+@media (max-width:450px) {
+
+    
+    .cabecalho__links{
+        display: none;
+    }
+    .into{
+        flex-direction: column-reverse;
+        margin: 1rem;
+    }
+    .into__texto{
+        margin: 1rem;
+    }
+    .into__button{
+        margin: 0 rem;
+        gap: 3px;
+    }
+
+
+}
+
+@media (max-width:720px) {
+    .into{
+    }
+}

@@ -1,40 +1,104 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1b1b1b;
 }
-
+body{
+    margin: 2rem  9rem 0 9rem;
+}
+main{
+}
+/*HEADER - CABEÇALHO */
 .cabecalho{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
-}
-
-.cabecalho__links{
-    display: flex;
-    gap:1rem;
-}
-
-.into{
-    margin: 2rem;
-    display: flex;
-}
-
-.into__texto{
-    margin: 2.5rem 1rem 2.5rem 1rem;
-}
-.into__button{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem;
-    gap: 3px;
-}
-.sobre__mim{
-    background-color: aquamarine;
     width: 100%;
 }
-.sobre__mim__texto{
-    padding: 1rem;
+.cabecalho__links{
+    display: flex;
+    gap: 2rem;
 }
+
+/*APRESENTAÇÃO*/
+.apresentacao{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2.5rem 1rem 2.5rem 0;
+    border: 2px solid ;
+}
+
+.apresentacao__texto{
+    align-self: center;
+    width: 751px;
+    margin: 61px 17px 61px 0;
+
+}
+.apresentacao__texto h1{
+    font-size: 40px;
+}
+.apresentacao__texto p{
+    font-size: 22px;
+    padding: 24px 0;
+}
+.apresentacao__button{
+    display: flex;
+    gap: 2rem;
+}
+.apresentacao__button button{
+    display: flex;
+    align-items:baseline;
+    border: 0cap;
+    background-color: white;
+    font-size: 16px;
+    font-stretch: expanded;
+}
+.apresentacao__button img{
+    margin: 0.5rem;
+    height: 13px;
+}
+
+.apresentacao__img{
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100%;
+    align-self: center;
+}
+
+/*SOBRE MIM*/
+.sobre__mim{
+    top:520px;
+    left: 0;
+    width: 100%;
+    background-color: #eaf2fd;
+    z-index: 1;
+    
+}
+.sobre__mim__texto{
+    margin: 61px 17px 61px /* 152 */0px;
+    max-width: 47rem;
+    margin-top: 50px;
+}
+
+.sobre__mim__texto h1{
+    font-size: 32px;
+}
+.sobre__mim__texto p{
+    font-size: 22px;
+    padding: 16px 0;
+}
+
+/*.SKILLS*/
+.skills{
+    display: flex;
+
+    margin: 61px 17px 61px 152px;
+    
+    
+}
+
 
 
 
@@ -45,22 +109,12 @@
     .cabecalho__links{
         display: none;
     }
-    .into{
+    .apresentacao{
         flex-direction: column-reverse;
-        margin: 1rem;
     }
-    .into__texto{
-        margin: 1rem;
+        
     }
-    .into__button{
-        margin: 0 rem;
-        gap: 3px;
-    }
-
-
-}
 
 @media (max-width:720px) {
-    .into{
-    }
+
 }

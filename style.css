@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #1b1b1b;
+    line-height: 1;
 }
+
 body{
+    box-sizing: border-box;
     background-color: var(--cor-fundo);
 }
 :root{
-    --margem-principal: 2rem 9rem 2rem 9rem;
+    --margem-principal: 2rem 9rem;
     --margem-interna: 16px 0;
     --titulo:32px;
     --paragrafo: 22px;
@@ -27,52 +31,47 @@ body{
     display: flex;
     gap: 2rem;}
 
-
 /*APRESENTAÇÃO*/
 .apresentacao{
+    height: 368px;
     display: flex;
     justify-content: space-between;
     border: 2px solid;
     margin: var(--margem-principal);
-    background-color: var(--cor-branco);
-}
+    background-color: var(--cor-branco);}
 .apresentacao__texto{
-    align-self: center;
-}
+    align-self: center;}
 .apresentacao__texto__titulo{
-    font-size: 40px;
-}
+    font-weight: bold;
+    font-size: 52px;}
 .apresentacao__texto__paragrafo{
     font-size: 22px;
-    padding: 24px 0;
-}
+    padding: 24px 0;}
 .apresentacao__button{
     display: flex;
-    gap: 2rem;
-}
+    gap: 2rem;}
 .apresentacao__button button{
     display: flex;
     align-items:baseline;
     border: 0cap;
     background-color: var(--cor-branco);
     font-size: 16px;
-    font-stretch: expanded;
-}
+    font-stretch: expanded;}
 .apresentacao__button img{
-    height: 13px;
-}
+    height: 13px;}
 .apresentacao__img{
-    height: auto;
+    width: 368px;
+    height: 368px;
     margin-left: 1rem;
-    justify-content: center;
-}
+    justify-content: center;}
 
 /*SOBRE MIM*/
 #sobre__mim{
-    display: flex;
+    height: 383px;
     width: 100%;
+    display:flex;
     background-color: var(--cor-secundaria);
-    background-size:cover;       
+    background-size: cover;
 }
 .sobre__mim__texto{
     margin: var(--margem-principal);
@@ -81,11 +80,11 @@ body{
     margin-bottom: 50px;   
 }
 
-.sobre__mim__texto h1{
-    font-size: 32px;
+.sobre__mim__titulo{
+    font-size: var(--titulo);
 }
 
-.sobre__mim__texto p{
+.sobre__mim__paragrafo{
     font-size: 22px;
     padding: var(--margem-interna);
 }
@@ -103,6 +102,7 @@ ul{
     padding: var(--margem-interna);
     font-size: var(--titulo);
     text-align: center;
+    font-weight: bold;
 }
 
 .skills__lista{
@@ -120,23 +120,14 @@ ul{
 
 /*.HOBBIES*/
 #hobbies{
-    background-color: var(--cor-secundaria);
-    width: 100%;
-    height: 300px;
-    align-content: center;
+    margin: var(--margem-principal);
 }
 
-.hobbies__container{
-    margin: var(--margem-principal);   
-}
-ul{
-    list-style-type: none;
-}
 .hobbies__titulo{
     padding: var(--margem-interna);
-    padding-top: 0;
     font-size: var(--titulo);
     text-align: center;
+    font-weight: bold;
 }
 
 .hobbies__lista{
@@ -146,11 +137,35 @@ ul{
 
 .hobbies__lista__item {
     width: 8rem;
-    height: 8rem;
+    height:8rem;
     background-color: var(--cor-caixa);
     padding: 1rem;
     align-content: flex-end;
 }
+
+#formacao{
+    display:flex;
+    width: 100%;
+    height: 581px;
+    background-color: var(--cor-secundaria);
+    background-size: cover;
+    
+}
+.formacao__titulo{
+    margin: var(--margem-principal);
+    padding: var(--margem-interna);
+    font-size: var(--titulo);
+    font-weight: bold;
+    text-align: center;
+}
+
+.formacao__texto{
+    margin: var(--margem-principal);
+    max-width: 47rem;
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+
 
 
 

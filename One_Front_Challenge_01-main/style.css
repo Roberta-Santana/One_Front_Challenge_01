@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    line-height: 1;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+}
+:root{
+    --margem-geral: 16px 152px;
+    --largura--geral: 1136px;
+    --margem-interna: 16px 0;
+
+    --apresentacao-titulo: 52px;
+    --apresentacao-paragrafo:22px;
+    --apresentacao-link:16px;
+
+    --corpo-titulo:32px;
+    --corpo-paragrafo: 16px;
+
+    --ul-largura:1136px;
+    --lista-item-Wlargura:176px;
+    --lista-item-Haltura:174px;
+
+    --cor-fundo:#EDEDED;
+    --cor-secundaria: #EAF2FD;
+    --cor-branco:white;
+    --cor-caixa: #8fb3e6;
+}
+
+/*HEADER - CABEÇALHO */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+}
+
+.cabecalho__logo{
+    font-weight: bold;
+    justify-content: flex-start;
+}
+.contato{
+    font-weight: bold;
+    justify-content: flex-end;
+}
+.cabecalho__links{
+    display: flex;
+    gap: 2rem;}
+
+/*APRESENTAÇÃO*/
+.apresentacao{
+    height: 368px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+    background-color: var(--cor-branco);}
+.apresentacao__texto{
+    align-self: center;
+    font-stretch: expanded;}
+.apresentacao__texto__titulo{
+    font-weight: bold;
+    font-size: var(--apresentacao-titulo);}
+.apresentacao__texto__paragrafo{
+    font-size: var(--apresentacao-paragrafo);
+    padding: 24px 0;}
+.apresentacao__button{
+    display: flex;
+    gap: 2rem;}
+.apresentacao__button button{
+    display: flex;
+    align-items:baseline;
+    border: 0cap;
+    background-color: var(--cor-branco);
+    font-size: var(--apresentacao-link);
+    font-stretch: expanded;}
+.apresentacao__button img{
+    height: 13px;}
+.apresentacao__img{
+    width: 368px;
+    height: 368px;
+    margin-left: 1rem;
+    justify-content: center;}
+
+/*SOBRE MIM*/
+#sobre__mim{
+    height: 383px;
+    width: 100%;
+    display:flex;
+    background-color: var(--cor-secundaria);
+    background-size: cover;}
+.sobre__mim__texto{
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+    max-width: 47rem;
+    margin-top: 50px;
+    margin-bottom: 50px;}
+
+.sobre__mim__titulo{
+    font-size: var(--corpo-titulo);}
+
+.sobre__mim__paragrafo{
+    font-size: var(--corpo-paragrafo);
+    padding: var(--margem-interna);}
+
+/*.SKILLS*/
+#skills{
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+    margin-top: 50px;
+    margin-bottom: 50px;}
+ul{
+    list-style-type: none;
+    width: var(--ul-largura);
+    gap:16px;
+}
+.skills__titulo{
+    padding: var(--margem-interna);
+    font-size: var(--corpo-titulo);
+    text-align: center;
+    font-weight: bold;}
+
+.skills__lista{
+    display: flex;
+    justify-content: space-between;}
+
+.skills__lista__item {
+    width: var(--lista-item-Wlargura);
+    height: var(--lista-item-Haltura);
+    background-color: var(--cor-branco);
+    padding: 1rem;
+    align-content: flex-end;
+    font-size: var(--corpo-paragrafo);
+    font-weight: bold;
+}
+
+/*.HOBBIES*/
+#hobbies{
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+}
+
+.hobbies__titulo{
+    padding: var(--margem-interna);
+    font-size: var(--corpo-titulo);
+    text-align: center;
+    font-weight: bold;}
+
+.hobbies__lista{
+    display: flex;
+    justify-content: space-between;}
+
+.hobbies__lista__item {
+    width: var(--lista-item-Wlargura);
+    height: var(--lista-item-Haltura);
+    background-color: var(--cor-branco);
+    padding: 1rem;
+    align-content: flex-end;
+    font-size: var(--corpo-paragrafo);
+    font-weight: bold;}
+
+/* FORMAÇAO */
+#formacao{
+    padding-top: 50px;
+    height:581px;
+    background-color: var(--cor-secundaria);
+    background-size: cover;}
+
+.formacao__texto{
+    justify-content:center;
+    text-align: center;
+
+}
+
+.formacao__titulo{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    font-size: var(--corpo-titulo);
+    font-weight: bold;}
+
+.formacao__lista{
+    margin: var(--margem-geral);
+    max-width: var(--largura--geral);
+    display: flex;
+    justify-content: space-between;}
+
+.formacao__lista__itens{
+    height: 347px;
+    width: 368px;
+    padding: 1rem;
+}
+
+.formacao__lista_itens__item{
+    display: flex;
+    background-color: white;
+    width: 368px;
+    height: 286px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao__logo{
+    width: 150px;
+}
+
+.formacao__lista_itens__texto{
+    margin-top: 1rem;
+    text-align: start;
+    font-size: var(--corpo-paragrafo);
+    font-weight: bold;
+}
+
+/*TABLET*/
+@media (max-width:995px) {
+
+:root{        
+    --margem-principal: 32px 32px;
+    --margem-interna: 16px 0;
+    --apresentacao-titulo: 22px;
+    --apresentacao-paragrafo:16px;
+    --apresentacao-link:16px;
+    
+    --cor-fundo:#EDEDED;
+    --cor-secundaria: #EAF2FD;
+    --cor-branco:white;
+    --cor-caixa: #8fb3e6;
+}
+.cabecalho__links{
+    display: none;
+}
+
+.apresentacao{
+    display: flex;
+    width: 768px;
+    height: 210px;
+    justify-content: space-between;
+    margin: var(--margem-principal);
+    border: none;
+    background-color: var(--cor-fundo);
+}
+.apresentacao__img{
+    width: 146px;
+    height: 210px;
+}
+#skills{
+    margin: var(--margem-principal);
+}
+.skills__lista{
+    display: flex;
+    max-width: 1134px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#hobbies{
+    width: 768px;
+    height: 390px;
+}
+.hobbies__lista{
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hobbies__lista__item {
+    width: 224px;
+    height:118;
+}
+
+#formacao{
+    width: 768px;
+    height: 291px;
+}
+.formacao__lista{
+    width: 704px;
+    height: 169px;
+}
+.formacao__lista__itens{
+    width: 224px;
+    height: 169px;
+}
+.formacao__lista_itens__item{
+    width: 224px;
+    height: 118px;
+}
+.formacao__logo{
+    width: 84px;
+    height: 58px;
+}
+}
+
+
+
+
+
+@media (max-width:450px) {    
+    .cabecalho__links{
+        display: none;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+        
+}

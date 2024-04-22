@@ -4,7 +4,9 @@
     margin: 0;
     font-family: 'Raleway', sans-serif;
     color: #464646;
-    line-height: 1;}
+    line-height: 1;
+    
+}
 
 body{
     box-sizing: border-box;
@@ -91,7 +93,7 @@ body{
 
 /*SOBRE MIM*/
 #sobre__mim{
-    width: 100%;
+    min-width:1440px;
     display:flex;
     background-color: var(--cor-secundaria);
     background-size: cover;}
@@ -170,6 +172,7 @@ ul{
 
 /* FORMAÇAO */
 #formacao{
+    min-width:1440px;
     padding: var(--margem-interna);
     background-color: var(--cor-secundaria);
     background-size: cover;}
@@ -250,7 +253,6 @@ justify-content:space-between;
     justify-content: space-between;
     align-items: center;}
 
-
 .button{
     display: flex;
     justify-content: space-between;
@@ -273,6 +275,77 @@ justify-content:space-between;
     background-color: #2A7AE4;
 }
 
+/*CONTATO*/
+#contato{
+    min-width: var(--margem-geral);
+    padding: 4rem 0;
+    background-color: var(--cor-secundaria);
+    background-size: cover;}
+
+.contato__caixa{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margem-geral);
+    width:var(--largura--geral);
+    height: 660px;
+}
+
+.contato img{
+    width: 464px;
+    height: 593px;
+}
+
+.contato__caixa__texto{
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contato__titulo{
+    font-size: var(--corpo-titulo);
+}
+.contato__paragrafo{
+    font-size: var(--corpo-paragrafo);
+}
+
+.contato__caixa__input__area{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    margin: var(--margem-interna);
+}
+
+.contato__label{
+    margin-left: 2px;
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+.contato__input{
+    margin-left: 2px;
+    border: none;
+    font-size: 16px;
+}
+.contato__button{
+    font-size: var(--corpo-paragrafo);
+    width: 165px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    color: white;
+    background-color: #2A7AE4;
+}
+
+.rodape{
+    min-width: 1440px; 
+    background-color: white;
+    background-size: contain;
+}
+.rodape__texto{
+    padding: var(--margem-interna);
+    text-align: center;
+}
+
 
 
 
@@ -282,7 +355,7 @@ justify-content:space-between;
 
 
 /*TABLET*/
-@media (max-width:750px) {
+@media (max-width:768px) {
 
 :root{        
     --margem-principal: 32px 32px;

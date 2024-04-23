@@ -499,11 +499,16 @@ ul{
 
 
 @media (max-width:450px) {    
+
     .cabecalho__links{
         display: none;
     }
     .apresentacao{
         flex-direction: column-reverse;
+    }
+
+    .apresentacao__img{
+        background-color: var(--cor-fundo);
     }
         
 }
